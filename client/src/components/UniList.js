@@ -54,9 +54,6 @@ function UniList({ countryName }) {
             ) : (
                 <>
 
-                
-                <h1 className={styles.wrapper}>{countryName}</h1>
-
                 <div className={styles.countryContainer}>
                   {country.map((countryDetail) => (
                     <CountryInfo
@@ -69,17 +66,18 @@ function UniList({ countryName }) {
                     ))}
                     
                 </div>
-                    
+
+                <h1 className={styles.wrapper}>Universities in {countryName}</h1>
 
                 <div className={styles.container}>
                     {universities.map((university) => (
-                    <UniCard
-                        key={Math.random()}
-                        name={university.name}
-                        web_page={university.web_pages[0]}
-                        domain={university.domains[0]}
-                        country={university.country}
-                    />
+                      <UniCard
+                          key={Math.random()}
+                          name={university.name}
+                          web_page={university.web_pages[0]}
+                          domain={university.domains[0]}
+                          country={university.country}
+                      />
                     ))}
                 </div>
                 </>

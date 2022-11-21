@@ -16,6 +16,7 @@ function UniCard({name, web_page, domain, country}) {
     .then((res) => {
       console.log(res);
     });
+    alert("Saved successfully!");
   }
 
   return (

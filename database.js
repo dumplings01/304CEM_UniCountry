@@ -14,9 +14,6 @@ const schema = new mongoose.Schema({
     webpage: {type: String},
     domain: {type: String},
     country: {type: String},
-    //countryTimezone: {type: String},
-    //countryCapital: {type: String},
-    //countrySubregion: {type: String}
 });
 
 const Record = mongoose.model('unis', schema);

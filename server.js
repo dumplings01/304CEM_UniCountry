@@ -21,6 +21,28 @@ app.post('/saveUni', async (req, res) => {
     });
 })
 
+app.get('/savedList', (req, res) => {
+    Record.find((err, docs) => {
+        if (err){
+            console.log("Failed to retrieve data. Error: " + err);
+        }
+        else {
+            res.send(docs);
+        }
+    });
+})
+
+app.delete('/delete_saved/:id', (req, res) => {
+
+    Record.findByIdAndDelete(req.params.id).
+    exec()
+    .then(doc => {
+        if (!doc) {
+            return res.status(404).end();
+        }
+        return res.status(204).end();
+    }).catch(err => next(err));
+});
 
 const port = process.env.PORT || 5000;
 

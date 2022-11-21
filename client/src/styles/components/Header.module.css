@@ -1,21 +1,24 @@
 .headerImage {
-    background-image: url("../../assets/harvard.png");
+    background-image: url("../../assets/stanford.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: blur(2px);
     height: 60vh;
+    opacity: 0.9;
+    background-color: black;
   }
   .container {
-    top: 30%;
-    left: 20%;
-    padding-left: 20%;
+    top: 50%;
+    left: 50%;
+    padding-bottom: 20%;
     transform: translate(-50%, -50%);
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    text-shadow: 2px 2px 50px #202020;
   }
   .container h1,
   h2 {
@@ -30,6 +33,12 @@
     font-size: 2rem;
   }
   
+  @media screen and (max-width: 1200px) {
+    .container {
+      top: 40%;
+    }
+  }
+
   @media screen and (max-width: 665px) {
     .container {
       left: 50%;

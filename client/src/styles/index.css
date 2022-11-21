@@ -18,11 +18,14 @@
   
   :root{
     --h1h2h3color: #ffffff;
-    --background: #a39c8f;
-    --cardBackground: #462025;
-    --boxShadow: #5c2930;
-    --link: #70798c;
-  
-    /*gray a39c8f*/
-    /*brown 462025*/
+    --background: #8f95a3;
+    --cardBackground: #202446;
+    --boxShadow: #75474d;
+    --link: #7b8292;
+    --saveButton: #a3425f;
+    --countryInfo: #2a2b31;
+    --infoBackground: #a9b1c0;
+    --savedBackground: #778196;
+    --savedCard: #43465f;
+    --deleteButton: #776f6f;
   }

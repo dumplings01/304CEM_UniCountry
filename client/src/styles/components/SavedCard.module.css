@@ -1,0 +1,44 @@
+.savedContainer {
+    padding: 10px;
+    margin: 0;
+    background-color: var(--savedBackground);
+}
+
+.savedCard {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--savedCard);
+    margin: 2rem 6rem;
+    padding: 3rem 4rem;
+    border-radius: 26px;
+}
+
+.details {
+    color: var(--h1h2h3color);
+    flex-direction: column;
+}
+
+.details h2, h3, a {
+    margin: 5px 0;
+}
+
+.delete_button {
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--deleteButton);
+    color: var(--h1h2h3color);
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.delete_button:hover{
+    background-color: #353233;
+    transition: 300ms;
+    box-shadow: rgba(104, 104, 104, 0.747) 0.1rem 0.1rem 2rem;
+}
+
+.loading {
+    background-color: var(--savedBackground);
+    height: 100vh;
+  }

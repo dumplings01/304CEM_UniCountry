@@ -16,13 +16,6 @@
     background-color: var(--background);
     height: 100vh;
   }
-
-  .countryInfo {
-    height: 25vh;
-    color: white;
-    font-size: large;
-    margin-top: 3rem;
-  }
   
   @media screen and (max-width: 665px) {
     .container {

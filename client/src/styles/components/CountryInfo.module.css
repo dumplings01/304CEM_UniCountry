@@ -1,0 +1,19 @@
+  .countryInfo {
+    height: 25vh;
+    color: var(--countryInfo);
+    font-size: large;
+    padding-top: 2.2rem;
+    margin: 0 4rem;
+    margin-bottom: 0.8rem;
+    background-color: var(--infoBackground);
+    border-radius: 10px;
+  }
+
+  .countryInfo h2 {
+    color: var(--countryInfo);
+    font-weight: bold;
+  }
+
+  .countryInfo h4 {
+    margin: 2px;
+  }

@@ -7,10 +7,6 @@ const app = express();
 // Bodyparser Middleware
 app.use(bodyParser.json());
 
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, './client/App.js'), (err) => err && res.status(500).send(err));
-  });
-
 app.post('/saveUni', async (req, res) => {
     const saveUni = new Record ({
         universityName: req.body.name,
